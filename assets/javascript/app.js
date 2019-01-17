@@ -3,7 +3,7 @@ var tvShows = ["Desperate Housewives", "Daria", "South Park", "Friends", "Buffy 
 
 // function for displaying movie data, then deleting the movies-(6.2-WorkingMovieApp)
 function buttons() {
-	$("#buttonsArea").empty();
+	$(".buttonsArea").empty();
 
 // Looping through the array of tvShows-(6.2-WorkingMovieApp)
 for (var i = 0; i < tvShows.length; i++) {
@@ -12,7 +12,7 @@ for (var i = 0; i < tvShows.length; i++) {
 	button.addClass("btn btn-outline-secondary");
 	button.attr("id", "tv-btn");
 	button.attr("tv-title", tvShows[i]);
-	$("#buttonsArea").append(button);
+	$(".buttonsArea").append(button);
 	}
 }
 
@@ -53,11 +53,12 @@ function displayGifs() {
 	gifImage.attr("data-state", "still");
 
 	// Appending the line and animation to the gifDiv
-	gifDiv.append(p);
 	gifDiv.append(gifImage);
+	gifDiv.append(p);
+	
 
 	// Prepending the gifDiv to HTML
-	$("#mainArea").prepend(gifDiv);
+	$(".mainArea").prepend(gifDiv);
 		}
 	});
 	}
