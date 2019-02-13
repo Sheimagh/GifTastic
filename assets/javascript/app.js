@@ -46,7 +46,7 @@ function displayGifs() {
 	// Creating and storing a img tag-(6.3-DynamicElements)
 	var gifImage = $("<img>");
 	// Setting different attribute of the gifimage to a property pulled off the result item
-	gifImage.attr("gif");
+	gifImage.addClass("gif");
 	gifImage.attr("src", results[i].images.fixed_height_still.url);
 	gifImage.attr("data-still", results[i].images.fixed_height_still.url);
 	gifImage.attr("data-animate", results[i].images.fixed_height.url);
